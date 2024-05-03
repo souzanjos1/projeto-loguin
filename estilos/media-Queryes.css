@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/*Todas as demais Mídia*/
+
+/* Typical Device Breackpoints
+-------------------------------
+Pequenas telas até: 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+
+*/
+
+@media screen and  (min-width: 768px) and (max-width: 990px) {
+
+    body {
+        background-image: linear-gradient(to top, #49a09D, #5f2c82) ;
+    }
+    section#login {
+        width: 80vw;
+        height: 350px;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+
+    }
+    section#login > div#formulário {
+        float: right;
+        width: 70%;
+        
+    }   
+    form > div.campo {
+        background-color: #5f2c82;
+        display: block;
+        width: 100%;
+        height: 60px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    div.campo > input {
+        background-color: #94cfcd;
+        font-size: 1em;
+        width: calc(100% - 44px);
+        height: 100%;
+        border: 0px;
+        border-radius: 8px;
+        padding: 4px;
+        
+        transform:translatey(-2px) ;
+    }
+}
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
+    section#login > div#imagem {
+        float:right;
+        width: 50%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    section#login > div#formulário {
+        float: left;
+        width: 50%;
+        
+    }   
+    body {
+        background-image: linear-gradient(to top, #49a09D, #5f2c82) ;
+    }
+
+}
+
+div#formulário > h1 {
+        font-size: 2em;
+}
+
+div#formulário > p {
+    font-size: 1.em;
+    margin: 10x 0px;
+}
